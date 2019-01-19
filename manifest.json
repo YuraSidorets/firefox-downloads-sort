@@ -1,38 +1,34 @@
 {
-
     "manifest_version": 2,
     "name": "Sorted Context Downloads",
     "version": "0.0.1",
-  
     "description": "Define folders for different downloads",
     "content_security_policy": "script-src 'self' https://*.jquery.com https://*.bootstrapcdn.com/; object-src 'self'",
     "browser_specific_settings": {
-        "gecko": {
-          "id": "test@gmail.com"
-        }
+      "gecko": {
+        "id": "test@gmail.com"
+      }
     },
-
     "icons": {
       "48": "icons/folder-48.png"
     },
-
     "permissions": [
-        "downloads", 
-        "storage",
-        "tabs",
-        "contextMenus"
+      "downloads",
+      "storage",
+      "tabs",
+      "contextMenus"
     ],
-    
     "browser_action": {
-        "default_icon": "icons/folder-16.png",
-        "default_title": "Downloads Sorter",
-        "default_popup": "dowload-sorter.html"
+      "default_icon": "icons/folder-16.png",
+      "default_title": "Downloads Sorter",
+      "default_popup": "dowload-sorter.html"
     },
-
     "options_ui": {
-        "page": "dowload-sorter.html"
+      "page": "dowload-sorter.html"
     },
     "background": {
-        "scripts": [ "background.js" ]
+      "scripts": [
+        "background.js"
+      ]
     }
 }
